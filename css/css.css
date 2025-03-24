@@ -1,0 +1,214 @@
+body{
+  font: "Roboto", "Open sans", sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+
+p {
+	font-family: "Roboto", sans-serif;
+	font-size: 1em;
+}
+h1 {
+	font-family: "Open sans", sans-serif;
+	font-size: 2em;
+}
+h2 {
+	font-family: "Open sans", sans-serif;
+}
+h3 {
+	font-family: "Open sans", sans-serif;
+}
+
+/* Continut */
+.continut{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+/* Header */
+header{
+  background:#202C45;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+}
+
+header a{
+  font-family: "Roboto", sans-serif;
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+header .highlight, header .current a{
+  color:#E81C2E;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+footer{
+  padding:20px;
+  margin-top:20px;
+  color:#ffffff;
+  background-color:#000530;
+  text-align: center;
+}
+
+footer .highlight{
+  color:#E81C2E;
+  font-weight:bold;
+}
+
+/* Sectiuni */
+#sectiuni{
+  margin: auto;
+}
+
+#sectiuni .sectiunea{
+  float:left;
+  text-align: left;
+  width:45%;
+  padding:10px;
+}
+#sectiuni .sectiuneb{
+  float:left;
+  text-align: left;
+  width:45%;
+  padding:10px;
+  background-color:#EAEAEA;
+}
+#sectiuni .sectiunec{
+  float:left;
+  text-align: left;
+  margin-top:10px;
+  width:60%;
+  padding:10px;
+  background-color:#EAEAEA;
+}
+#sectiuni .sectiuned{
+  float:left;
+  text-align: left;
+  width:30%;
+  padding:10px;
+}
+#sectiuni .sectiuneb img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:500px;
+}
+#sectiuni .sectiuned img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:400px;
+}
+
+/* Media */
+@media(max-width: 768px){
+  header #branding,
+  header nav,
+  header nav li,
+  #sectiuni .sectiunea,
+  #sectiuni .sectiuneb,
+
+  header{
+    padding-bottom:20px;
+  }
+}
+
+/* Hero image */
+.hero {
+    /* Sizing */
+    width: 98.9vw;
+    height: 100vh;
+    
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Text styles */
+    text-align: center;
+    color: white;
+    
+    /* Background styles */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('https://upload.wikimedia.org/wikipedia/commons/0/06/Cassina_F%C4%83get_-_lateral_01.JPG');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero h1 {
+	font-family: Open sans, sans-serif;
+    /* Text styles */
+    font-size: 5em;
+    
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.hero h2 {
+	font-family: Open sans, sans-serif;
+    /* Text styles */
+    font-size: 2.5em;
+	color: #FFFFFF;
+    
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.hero .btn {
+    /* Positioning and sizing */
+    display: block;
+    width: 200px;
+    
+    /* Padding and margins */
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Text styles */
+    color: white; /* CHANGE THIS LINE */
+    text-decoration: none;
+    font-size: 1.5em;
+    
+    /* Border styles */
+    border: 3px solid white; /* CHANGE THIS LINE */
+    border-radius: 20px;
+}
